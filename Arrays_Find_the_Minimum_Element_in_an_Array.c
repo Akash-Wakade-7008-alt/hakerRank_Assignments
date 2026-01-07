@@ -5,12 +5,12 @@
 
 // Input Format:
 
-// First line: An integer N, the size of the array
+// First line: Integer N
 // Second line: N space-separated integers
 
 // Output Format:
 
-// Print the maximum element of the array.
+// Print the minimum element of the array.
 
 int main()
 {
@@ -22,20 +22,20 @@ int main()
 
     for (int i = 0; i <= N - 1; i++)
     {
-        scanf("%d", &a[i]);
+        scanf("%d ", &a[i]);
     }
 
-    int max = a[0];
+    int min = a[0];
 
-    for (int i = 1; i <= N - 2; i++)
+    for (int i = 0; i <= N - 2; i++)
     {
-        if (a[i + 1] > a[i])
+        if (a[i + 1] < a[i])
         {
-            max = a[i + 1];
+            min = a[i + 1];
         }
     }
 
-    printf("%d", max);
+    printf("%d", min);
 
     return 0;
 }
@@ -46,11 +46,11 @@ int main()
 // 1 3 5 7 9
 // Sample Output 0
 
-// 9
+// 1
 // Sample Input 1
 
 // 4
 // -5 -2 -9 -1
 // Sample Output 1
 
-// -1
+// -9

@@ -3,6 +3,15 @@
 #include <math.h>
 #include <stdlib.h>
 
+Input Format:
+
+First line: An integer N, representing the size of the array
+Second line: N space-separated integers
+
+Output Format:
+
+Print the sum of all elements in the array.
+
 int main()
 {
 
