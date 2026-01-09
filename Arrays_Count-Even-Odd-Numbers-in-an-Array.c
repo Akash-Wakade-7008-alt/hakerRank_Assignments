@@ -1,13 +1,13 @@
 #include <stdio.h>
 
-Input Format:
+// Input Format:
 
-The first line contains an integer n — the number of elements in the array.
-The second line contains n space-separated integers arr[] where each element arr[i] represents the i-th element of the array.
+// The first line contains an integer n — the number of elements in the array.
+// The second line contains n space-separated integers arr[] where each element arr[i] represents the i-th element of the array.
 
-Output Format:
+// Output Format:
 
-Print two space-separated integers: the count of even numbers followed by the count of odd numbers in the array.
+// Print two space-separated integers: the count of even numbers followed by the count of odd numbers in the array.
 
 int main()
 {
@@ -39,3 +39,18 @@ int main()
 
     return 0;
 }
+
+// Sample Input 0
+
+// 5
+// 1 2 3 4 5
+// Sample Output 0
+
+// 2 3
+// Sample Input 1
+
+// 4
+// 0 -1 -2 3
+// Sample Output 1
+
+// 2 2
