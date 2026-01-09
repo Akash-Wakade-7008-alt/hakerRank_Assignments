@@ -1,15 +1,15 @@
 #include <stdio.h>
 #include <math.h>
 
-Input Format
+// Input Format:
 
-A single integer n.
+// A single integer n.
 
 
-Output Format
+// Output Format:
 
-A single line containing the first n terms of the sequence, separated by spaces, starting with '<' and ending with '>'.
-If series doesn't exist, do not print anything.
+// A single line containing the first n terms of the sequence, separated by spaces, starting with '<' and ending with '>'.
+// If series doesn't exist, do not print anything.
 
 
 int main() {
@@ -40,3 +40,17 @@ int main() {
   
     return 0;
 }
+
+
+// Sample Input 0
+
+// 5
+// Sample Output 0
+
+// <1 2 4 8 16>
+// Sample Input 1
+
+// 3
+// Sample Output 1
+
+// <1 2 4>
