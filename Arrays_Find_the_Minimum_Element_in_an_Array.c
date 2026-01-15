@@ -29,9 +29,9 @@ int main()
 
     for (int i = 0; i <= N - 2; i++)
     {
-        if (a[i + 1] < a[i])
+        if (min>a[i])
         {
-            min = a[i + 1];
+            min = a[i];
         }
     }
 
