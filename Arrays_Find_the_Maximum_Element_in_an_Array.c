@@ -12,6 +12,11 @@
 
 // Print the maximum element of the array.
 
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
 int main()
 {
 
@@ -27,11 +32,11 @@ int main()
 
     int max = a[0];
 
-    for (int i = 1; i <= N - 2; i++)
+    for (int i = 1; i <= N - 1; i++)
     {
-        if (a[i + 1] > a[i])
+        if (a[i+1] > a[i])
         {
-            max = a[i + 1];
+            max = a[i+1];
         }
     }
 
