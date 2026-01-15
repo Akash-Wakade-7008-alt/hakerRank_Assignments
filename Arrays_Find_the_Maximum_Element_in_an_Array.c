@@ -34,9 +34,9 @@ int main()
 
     for (int i = 1; i <= N - 1; i++)
     {
-        if (a[i+1] > a[i])
+        if (a[i] > max)
         {
-            max = a[i+1];
+            max = a[i];
         }
     }
 
