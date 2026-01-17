@@ -3,96 +3,123 @@
 #include <math.h>
 #include <stdlib.h>
 
+// Given an array of integers, determine whether the array is sorted.
 
-Given an array of integers, determine whether the array is sorted.
+// Print "Ascending" if the array is sorted in non-decreasing (ascending) order
+// Print "Descending" if the array is sorted in non-increasing (descending) order
+// Print "Not Sorted" otherwise
+// NOTE: An array with equal adjacent elements is considered sorted - "Ascending"
 
-Print "Ascending" if the array is sorted in non-decreasing (ascending) order
-Print "Descending" if the array is sorted in non-increasing (descending) order
-Print "Not Sorted" otherwise
-NOTE: An array with equal adjacent elements is considered sorted - "Ascending"
+// Input Format:
 
-Input Format:
+// First line: An integer N, representing the size of the array
+// Second line: N space-separated integers
 
-First line: An integer N, representing the size of the array
-Second line: N space-separated integers
+// Output Format:
 
-Output Format:
+// Print one of the following:
 
-Print one of the following:
+// Ascending
+// Descending
+// Not Sorted
 
-Ascending
-Descending
-Not Sorted
+int main()
+{
 
-int main() {
+    int N, count_1 = 0, count_2 = 0, flag = 0;
 
-    int N,count_1=0,count_2=0,flag=0;
-    
-    scanf("%d",&N);
-    
+    scanf("%d", &N);
+
     int a[N];
-    
-    for(int i=0;i<=N-1;i++)
+
+    for (int i = 0; i <= N - 1; i++)
     {
-        scanf("%d",&a[i]);
+        scanf("%d", &a[i]);
     }
-    
-    if(N==1)
-    {
-        printf("Ascending");
-        return 0;    
-    }
-    
-    
-    for(int i=0;i<=N-1;i++)
-    {
-        if(a[i+1]==a[i])
-        {
-            flag=1;
-        }
-    }
-    
-    if(flag==1)
+
+    if (N == 1)
     {
         printf("Ascending");
         return 0;
     }
-    
-    
-    for(int i=0;i<=N-1;i++)
+
+    for (int i = 0; i <= N - 1; i++)
     {
-        if(a[i+1]>=a[i])
+        if (a[i + 1] == a[i])
+        {
+            flag = 1;
+        }
+    }
+
+    if (flag == 1)
+    {
+        printf("Ascending");
+        return 0;
+    }
+
+    for (int i = 0; i <= N - 1; i++)
+    {
+        if (a[i + 1] >= a[i])
         {
             count_1++;
         }
     }
-    
-    for(int i=0;i<=N-1;i++)
+
+    for (int i = 0; i <= N - 1; i++)
     {
-        if(a[i+1]<=a[i])
+        if (a[i + 1] <= a[i])
         {
             count_2++;
         }
     }
-    
-    
-    
-    if(count_1==N)
+
+    if (count_1 == N)
     {
         printf("Ascending");
     }
-    
-    else if(count_2==N)
+
+    else if (count_2 == N)
     {
         printf("Descending");
     }
-    
-    else if(count_1!=N || count_2!=N)
+
+    else if (count_1 != N || count_2 != N)
     {
         printf("Not Sorted");
     }
-    
-    
-    
+
     return 0;
 }
+
+// Sample Input 0
+
+// 5
+// 1 2 2 3 5
+// Sample Output 0
+
+// Ascending
+// Sample Input 1
+
+// 5
+// 9 7 7 4 1
+// Sample Output 1
+
+// Descending
+// Sample Input 2
+
+// 1
+// 10
+// Sample Output 2
+
+// Ascending
+// Sample Input 3
+
+// 4
+// 5 5 5 5
+// Sample Output 3
+
+// Ascending
+// Sample Input 4
+
+// 5
+// 1 3 2 4 5
