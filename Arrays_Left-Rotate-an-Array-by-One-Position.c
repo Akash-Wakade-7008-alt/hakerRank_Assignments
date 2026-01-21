@@ -1,55 +1,67 @@
 #include <stdio.h>
 
-You are given an array of integers. Your task is to implement a function that modifies the given array in-place to left rotate it by one position.
+// You are given an array of integers. Your task is to implement a function that modifies the given array in-place to left rotate it by one position.
 
-Function Signature
+// Function Signature
 
-void leftRotateByOne(int arr[], int n);
-Note: The function should not return anything and must modify the given array itself.
+// void leftRotateByOne(int arr[], int n);
+// Note: The function should not return anything and must modify the given array itself.
 
-Input Format:
+// Input Format:
 
-The function leftRotateByOne will receive:
-An integer array arr of size n.
-An integer n representing the number of elements in the array.
+// The function leftRotateByOne will receive:
+// An integer array arr of size n.
+// An integer n representing the number of elements in the array.
 
+// Output Format:
 
-Output Format:
+// The function should modify the given array in-place by one left rotation.
+// You do not need to print anything.
 
-The function should modify the given array in-place by one left rotation.
-You do not need to print anything.
+void leftRotateByOne(int arr[], int n)
+{
 
+    int temp = arr[0];
 
-
-
-void leftRotateByOne(int arr[], int n) {
-
-    int temp=arr[0];
-    
-    for(int i=0;i<=n-2;i++)
+    for (int i = 0; i <= n - 2; i++)
     {
-        arr[i]=arr[i+1];
+        arr[i] = arr[i + 1];
     }
-    
-    arr[n-1]=temp;
-    
-  
-    
+
+    arr[n - 1] = temp;
 }
 
-int main() {
+int main()
+{
     int n;
     scanf("%d", &n);
-    
+
     int arr[n];
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++)
+    {
         scanf("%d", &arr[i]);
     }
 
     leftRotateByOne(arr, n);
 
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++)
+    {
         printf("%d ", arr[i]);
     }
     return 0;
 }
+
+// Sample Input 0
+
+// 5
+// 1 2 3 4 5
+// Sample Output 0
+
+// 2 3 4 5 1
+// Sample Input 1
+
+// 4
+// 10 20 30 40
+// Sample Output 1
+
+// 20 30 40 10
