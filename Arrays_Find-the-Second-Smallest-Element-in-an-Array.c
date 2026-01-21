@@ -3,81 +3,107 @@
 #include <math.h>
 #include <stdlib.h>
 
-Given an array of integers, determine the second smallest distinct element in the array.
+// Given an array of integers, determine the second smallest distinct element in the array.
 
-The second smallest element is defined as the element that is strictly greater than the smallest element and smaller than all other remaining elements.
-If the array does not contain at least two distinct elements, print -1.
-Note: Adjacent elements may be the same.
+// The second smallest element is defined as the element that is strictly greater than the smallest element and smaller than all other remaining elements.
+// If the array does not contain at least two distinct elements, print -1.
+// Note: Adjacent elements may be the same.
 
-Input Format:
+// Input Format:
 
-First line: An integer N, representing the size of the array
-Second line: N space-separated integers
+// First line: An integer N, representing the size of the array
+// Second line: N space-separated integers
 
+// Output Format:
 
-Output Format:
+// Print the second smallest distinct element in the array.
+// If no such element exists, print -1.
 
-Print the second smallest distinct element in the array.
-If no such element exists, print -1.
+int main()
+{
 
-int main() {
+    int N, count = 0;
 
-    int N,count=0;
-    
-    scanf("%d",&N);
-    
+    scanf("%d", &N);
+
     int a[N];
-    
-    for(int i=0;i<=N-1;i++)
+
+    for (int i = 0; i <= N - 1; i++)
     {
-        scanf("%d",&a[i]);
+        scanf("%d", &a[i]);
     }
-    
-    for(int i=0;i<=N-2;i++)
+
+    for (int i = 0; i <= N - 2; i++)
     {
-        if(a[i]==a[i+1])
+        if (a[i] == a[i + 1])
         {
             count++;
         }
     }
-    
-    if(count==N-1)
+
+    if (count == N - 1)
     {
         printf("-1");
         return 0;
     }
-    
-    
-    int min=a[0];
-    
-    for(int i=1;i<=N-1;i++)
+
+    int min = a[0];
+
+    for (int i = 1; i <= N - 1; i++)
     {
-        if(a[i]<min)
+        if (a[i] < min)
         {
-            min=a[i];
+            min = a[i];
         }
     }
-    
-    
-    int secondSmallest=a[0];
-    
-    for(int i=1;i<=N-1;i++)
+
+    int secondSmallest = a[0];
+
+    for (int i = 1; i <= N - 1; i++)
     {
-        if(a[i]<secondSmallest)
+        if (a[i] < secondSmallest)
         {
-            if(a[i]==min)
+            if (a[i] == min)
             {
                 continue;
             }
-            
+
             else
             {
-                secondSmallest=a[i];
+                secondSmallest = a[i];
             }
         }
     }
-    
-    
-    printf("%d",secondSmallest);
+
+    printf("%d", secondSmallest);
     return 0;
 }
+
+// Sample Input 0
+
+// 3
+// 5 5 4
+// Sample Output 0
+
+// 5
+// Sample Input 1
+
+// 3
+// 5 5 5
+// Sample Output 1
+
+// -1
+// Sample Input 2
+
+// 7
+// 5 3 8 6 2 9 1
+// Sample Output 2
+
+// 2
+// Sample Input 3
+
+// 6
+// 1 1 2 2 3 3
+// Sample Output 3
+
+// 2
