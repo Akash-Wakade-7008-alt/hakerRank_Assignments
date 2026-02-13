@@ -60,28 +60,6 @@ Welcome to my **elite problem-solving repository**, where I consistently practic
 
 Each folder represents deliberate practice toward becoming an **industry-ready developer.**
 
----
-
-## 📊 GitHub Analytics
-
-<p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=Akash-Wakade-7008-alt&show_icons=true&theme=tokyonight&hide_border=true"/>
-  <img height="170" src="https://github-readme-streak-stats.herokuapp.com/?user=Akash-Wakade-7008-alt&theme=tokyonight&hide_border=true"/>
-</p>
-
-<p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Akash-Wakade-7008-alt&layout=compact&theme=tokyonight&hide_border=true"/>
-</p>
-
----
-
-## 🐍 Contribution Snake
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Akash-Wakade-7008-alt/Akash-Wakade-7008-alt/output/github-contribution-grid-snake.svg">
-</p>
-
-*(If the snake does not appear, enable GitHub Actions — it will generate automatically.)*
 
 ---
 
@@ -95,24 +73,16 @@ Each folder represents deliberate practice toward becoming an **industry-ready d
 🚀 Become top 1%  
 
 ---
-
 ## 🌐 Connect With Me
 
-<p align="center">
+💻 **GitHub:**  
+👉 https://github.com/Akash-Wakade-7008-alt  
 
-<a href="https://github.com/Akash-Wakade-7008-alt">
-<img src="https://img.shields.io/badge/GitHub-111111?style=for-the-badge&logo=github"/>
-</a>
+🏆 **HackerRank:**  
+👉 https://www.hackerrank.com/profile/akashwakade7355  
 
-<a href="https://www.hackerrank.com/profile/akashwakade7355">
-<img src="https://img.shields.io/badge/HackerRank-00EA64?style=for-the-badge&logo=hackerrank&logoColor=white"/>
-</a>
-
-<a href="https://www.linkedin.com/in/akash-wakade-08b8412b2/">
-<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
-</a>
-
-</p>
+🔗 **LinkedIn:**  
+👉 https://www.linkedin.com/in/akash-wakade-08b8412b2/  
 
 ---
 
