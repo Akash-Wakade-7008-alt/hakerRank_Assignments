@@ -102,9 +102,3 @@ If you find this helpful:
 ⭐ Star it  
 🍴 Fork it  
 📢 Share it  
-
----
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:4F46E5,100:6C63FF&height=130&section=footer"/>
-</p>
