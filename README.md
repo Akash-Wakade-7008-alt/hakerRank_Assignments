@@ -102,3 +102,11 @@ If you find this helpful:
 ⭐ Star it  
 🍴 Fork it  
 📢 Share it  
+
+
+
+# 🚀 HackerRank Solutions Repository
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:6C63FF,100:3F3DFF&height=220&section=header&text=HackerRank%20Assignments&fontSize=45&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Consistency%20•%20Logic%20•%20Problem%20Solving&descAlignY=60"/>
+</p>
