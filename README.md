@@ -80,7 +80,7 @@ Each folder represents deliberate practice toward becoming an **industry-ready d
 👉 https://github.com/Akash-Wakade-7008-alt  
 
 🏆 **HackerRank:**  
-👉 https://www.hackerrank.com/profile/akashwakade7355  
+👉 https://www.hackerrank.com/contests/peacemakers-25b-blr/challenges
 
 🔗 **LinkedIn:**  
 👉 https://www.linkedin.com/in/akash-wakade-08b8412b2/  
